@@ -18,4 +18,4 @@ This project uses various python modules such as my-sqlconnector-python, pandas,
 
   
 
-All the details of source database from which the 
+
