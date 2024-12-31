@@ -16,6 +16,7 @@ This project uses various python modules such as my-sqlconnector-python, pandas,
 
   The loading script converts all the transformed csv files into pandas dataframes and reads the target database from config3.json. Using sqlalchemy and sqlalchemy_utils it creates the target database and loads all the transformed dataframes into database as tables.
 
-  
-
-
+This project is written in two versions.
+The first version uses **Pandas** to create dataframes from sql tables and csv files.
+The second version uses **Pyspark**. It is fast and is particularly used for large datasets. Pyspark dataframes are fast to read and converting to other data types like parquet.
+The Pyspark code is approximately 30% faster than the Pandas code for the sample dataset I used. For bigger datasets the performance difference further increases.
